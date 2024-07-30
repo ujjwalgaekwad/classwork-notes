@@ -42,8 +42,6 @@ getData(1).then((res) => {
     })
 })
 
-//top to same but different write tech
-
 //Promise chain
 getData(1).then((res) => {
     return getData(2);
