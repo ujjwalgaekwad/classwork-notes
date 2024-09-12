@@ -4,43 +4,79 @@ class Student {  //Single Inheritance
 }
 
 class Classroom extends Student {
-    public void classdata(){
+    void classdata(){
         System.out.println("Class 12th Batch-2");
     } 
 }
 
 
-class Work1 { //Multilevel Inheritance
-    public void workA(){
+
+class Student1 { //Multilevel Inheritance
+    public void work1(){
         System.out.println("Garba classes -7:00");
     }
 }
 
-class Ujjwal extends Work1 {
+class Ujjwal extends Student1 {
     public void workdata(){
        
     }
 }
 
-class Work2 extends Ujjwal {
-    public void workB(){
+class Student2 extends Ujjwal {
+    public void work2(){
         System.out.println("Self Study");
     }
 }
 
+
+
+class StudentInfo {  //Hierachical Inheritance
+    public void Sinfo(){
+        System.out.println("Student information");
+    
+    }
+}
+
+class info1 extends StudentInfo{
+    public void studentName(){
+       System.out.println("ujju");
+    }
+}
+
+class info2 extends StudentInfo{
+    public void studentId(){
+       System.out.println("1873");
+    }
+}
+
+
+class A{  //Hybrid Inheritance
+    public void A1(){
+        System.out.println("A data");
+    }
+}
+
+class B extends A{
+    public void B1(){
+        System.out.println("B data");
+    }
+}
+class C extends A{
+    public void C1(){
+        System.out.println("C data");
+    }
+}
+class D extends B{
+    public void D1(){
+        System.out.println("D data");
+    }
+}
+
+
 public class Inheritance {
     public static void Single(String[] args){
-        Classroom c1 = new Classroom();
-        c1.Sname = "ujjwal";
-        c1.Sid = 1873;
-        c1.classdata();
-        System.out.println(c1.Sname+" "+c1.Sid);
-    }
-
-    public static void Multilevel(String[] args){
-        Ujjwal u1 = new Ujjwal();
-       // Ujjwal u2 = new Ujjwal();
-        u1.workA();
        
     }
+
 }
