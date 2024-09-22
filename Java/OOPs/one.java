@@ -51,7 +51,7 @@ class ujju{
     }
 }
 
-//Inheritance - single, multilevels, hirechical, hybrid 
+//Inheritance - single, multilevels, hier, hybrid 
 class Shape{
     public void data(){
         System.out.println("Display areas");
